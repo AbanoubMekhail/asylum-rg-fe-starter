@@ -61,7 +61,11 @@ function RenderLandingPage(props) {
       <div className="view-more-data-btn-container">
         <Button
           type="default"
-          style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+          style={{
+            backgroundColor: '#404C4A',
+            color: '#FFFFFF',
+            fontFamily: 'Verdana',
+          }}
           onClick={() => history.push('/graphs')}
         >
           View the Data
@@ -86,7 +90,48 @@ function RenderLandingPage(props) {
       </div>
       <div>
         {/* Bottom Section: Add code here for the graphs section for your first ticket */}
-        {/* <div className="bottom-section">*/}
+        <div className="bottom-section">
+          <h2>Systemic Disparity Insights</h2>
+          <div className="paragraphs-container">
+            <div>
+              <h2>36%</h2>
+              <p>
+                By the end of the Trump adminstration, the average <br /> asylum
+                office grant rate had fallen 36 percent from an <br /> average
+                44 percent in fiscal year 2016 to 28 percent <br /> in fiscal
+                year 2020.
+              </p>
+            </div>
+            <div>
+              <h2>5%</h2>
+              <p>
+                The New York asylum office grant rate dropped to 5 <br />{' '}
+                percent in fiscal year 2020.
+              </p>
+            </div>
+            <div>
+              <h2>6x Lower</h2>
+              <p>
+                Between fiscal year 2017 and 2020, the New York <br /> asylum
+                office's average grant rate was six times lower <br /> than the
+                San Francisco asylum office.
+              </p>
+            </div>
+          </div>
+          <div className="read-more-data-btn-container">
+            <Button
+              type="default"
+              style={{
+                backgroundColor: '#404C4A',
+                color: '#FFFFFF',
+                fontFamily: 'Verdana',
+              }}
+              // onClick={() => history.push('/graphs')}
+            >
+              Read More
+            </Button>
+          </div>
+        </div>
         <p onClick={() => scrollToTop()} className="back-to-top">
           Back To Top ^
         </p>
