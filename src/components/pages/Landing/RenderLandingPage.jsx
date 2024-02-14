@@ -58,20 +58,38 @@ function RenderLandingPage(props) {
           <h2>Search Grant Rates Over Time</h2>
         </div>
       </div>
-      <div className="view-more-data-btn-container">
-        <Button
-          type="default"
-          style={{
-            backgroundColor: '#404C4A',
-            color: '#FFFFFF',
-            fontFamily: 'Verdana',
-          }}
-          onClick={() => history.push('/graphs')}
-        >
-          View the Data
-        </Button>
+      <div className="button-container">
+        {' '}
+        {/**creating a dev container to handel styling  */}
+        <div className="view-more-data-btn-container">
+          <Button
+            type="default"
+            style={{
+              backgroundColor: '#404C4A',
+              color: '#FFFFFF',
+              fontFamily: 'Verdana',
+            }}
+            onClick={() => history.push('/graphs')}
+          >
+            View the Data
+          </Button>
+        </div>
+        <div className="download-the-data-btn-container">
+          {' '}
+          {/*creating a new button with some styles no on click function */}
+          <Button
+            type="default"
+            style={{
+              backgroundColor: '#404C4A',
+              color: '#FFFFFF',
+              fontFamily: 'Verdana',
+            }}
+            // onClick={() => ()}
+          >
+            Download the Data
+          </Button>
+        </div>
       </div>
-
       <div className="middle-section">
         <div className="hrf-img-container">
           <img src={HrfPhoto} alt="Human Rights First" className="hrf-img" />
@@ -105,7 +123,7 @@ function RenderLandingPage(props) {
             <div>
               <h2>5%</h2>
               <p>
-                The New York asylum office grant rate dropped to 5 <br />{' '}
+                The New York asylum office grant rate dropped to 5 <br />
                 percent in fiscal year 2020.
               </p>
             </div>
@@ -126,7 +144,7 @@ function RenderLandingPage(props) {
                 color: '#FFFFFF',
                 fontFamily: 'Verdana',
               }}
-              // onClick={() => history.push('/graphs')}
+              // onClick={() => ()}
             >
               Read More
             </Button>
